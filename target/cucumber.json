@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-24T22:16:27.898Z",
+        "line": 20,
+        "name": "Account summary page account types",
+        "description": "",
+        "id": "account-summary;account-summary-page-account-types",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3954976400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is already on home page",
+            "match": {
+              "location": "LoginPageStepDefinitions.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1157337100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user enters \"username\" and \"password\" and clicks Sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginPageStepDefinitions.user_enters_and_and_clicks_Sign_in_button(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 219060700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "following columns should be displayed on Credit Accounts table",
+            "match": {
+              "location": "AccountSummaryPageStepDefinitions.followingColumnsShouldBeDisplayedOnCreditAccountsTable(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Account",
+                  "Credit Card",
+                  "Balance"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 137813799,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "close browser",
+            "match": {
+              "location": "LoginPageStepDefinitions.closeBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@accountSummary3"
+          }
+        ]
+      }
+    ],
+    "name": "Account Summary",
+    "description": "",
+    "id": "account-summary",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AccountSummary.feature",
+    "tags": []
+  }
+]
