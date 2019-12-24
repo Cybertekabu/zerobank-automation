@@ -8,12 +8,11 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions (
         features = {"src/test/resources/features"},
-        glue = {"/com/zerobank/step_definations"},
+        glue = {"/com/zerobank/step_definitions"},
         plugin = {"pretty", "html:target/default-cucumber-reports", "json:target/cucumber.json"},
         monochrome = true,
         dryRun = false,
-        tags = "@login"
-
+        tags = "@wip"
 )
 
 public class CukesRunner {
