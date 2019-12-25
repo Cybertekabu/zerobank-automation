@@ -1,6 +1,7 @@
 package com.zerobank.runners;
 
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -13,7 +14,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty", "html:target/default-cucumber-reports", "json:target/cucumber.json"},
         monochrome = true,
         dryRun = false,
-        tags = "@accountActivity4"
+        tags = "@addNewPayee"
 )
 
 public class CukesRunner {
